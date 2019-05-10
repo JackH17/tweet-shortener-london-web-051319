@@ -2,7 +2,7 @@
 phrase = "Hey guys, can anyone teach me how to be cool? I really want to be the best at everything, you know what I mean? Tweeting is super fun you guys!!!!"
 
 # Write your code here.
-require "pry"
+require 'pry'
 
 
  def dictionary 
@@ -23,6 +23,9 @@ end
  def word_substituter (string)
   array = string.split(" ")
   array.each_with_index do |words,index|
+    
+    binding.pry 
+    
     dictionary.keys.each do |x|
       if x == words 
       array[index] = dictionary[x]
