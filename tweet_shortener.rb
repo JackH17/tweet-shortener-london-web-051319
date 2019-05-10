@@ -24,7 +24,7 @@ end
   array = string.split(" ")
   array.each_with_index do |words,index|
     
-    binding.pry 
+
     
     dictionary.keys.each do |x|
       if x == words 
